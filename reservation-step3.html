@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARK - Rides</title>
+
+  <!------------------ custom style css link ----------------------->
+  <link rel="stylesheet" href="assets/css/reservation-step3.css" />
+
+  <!------------------ bootstrap css link ----------------------->
+  <link rel="stylesheet" href="assets/mdbootstrap/css/mdb.min.css" />
+
+  <!------------------ font awesome ----------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <!------------------ header top section ----------------------->
+    <section id="section-top-header">
+      <div class="container">
+        <div id="top-header-container">
+          <div class="d-flex">
+            <i class="fa-brands fa-square-facebook mx-1 text-light"></i>
+            <i class="fa-brands fa-instagram mx-1 text-light"></i>
+            <i class="fa-brands fa-youtube mx-1 text-light"></i>
+
+          </div>
+
+          <div class="top-header-contact">
+            <p class="text-light p-0 m-0" id="header-email">
+              ARKmotorrentals@gmail.com
+            </p>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------ header navbar ----------------------->
+    <nav class="navbar navbar-expand-lg navbar-scroll" id="navbar">
+      <div class="container">
+        <div class="logo-container">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/ARK-logo.png" alt="" /></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a class="nav-link tc" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="bikes.html">Motorcycles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="touristspot.html">Tourist Spots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active tc" href="reservation-step1.html">Rent Now</a>
+            </li>
+            <li class="nav-item sign-in">
+              <a id="nav-button" href="signin.html" class="btn btn-dark">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-------------------- hero --------------------->
+    <section class="section-1" id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-12 text-center">
+            <h1 class="text-light">Reservation - Choose Your Option</h1>
+            <div class="steps">
+              <div class="step step-1">
+                <p><a href="reservation-step1.html">Step 1</a></p>
+                <span></span>
+              </div>
+              <div class="step step-2">
+                <p><a href="reservation-step2.html">Step 2</a></p>
+                <span></span>
+              </div>
+              <div class="step active step-3">
+                <p><a href="#!">Step 3</a></p>
+                <span></span>
+              </div>
+              <div class="step step-4">
+                <p><a href="reservation-step4.html">Step 4</a></p>
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!------------------ check out section 1------------------->
+    <section class="">
+      <div class="container" id="check_out">
+        <div class="row my-4" id="date-summary">
+          <div class="col-lg-6 col-md-6">
+            <h4>PICK-UP</h4>
+            <div class="pis">
+              <p><span id="picked-location"></span></p>
+              <p><span id="picked-date"></span> &#124; <span id="picked-time"></span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <h4>RETURN</h4>
+            <div class="pis">
+              <p><span id="return-location"></span></p>
+              <p><span id="return-date"></span> &#124; <span id="return-time"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-2 bike-summary">
+          <div class="col-lg-6" id="check_One">
+
+            <div class="check_One-img-container" style="display: grid; place-items: center; height: 100%;">
+              <img class="img-card rounded" src="./assets/img/motor/kawasaki/ninja-400-2019/9.jpg" id="motor-selected"
+                alt="" />
+            </div>
+          </div>
+
+
+          <div class="col-lg-6" id="check_Two">
+
+            <div class="Engine">
+              <h4 id="motor-name">KAWASAKI Versys 1000 SE</h4>
+              <p>
+                Engine Type: 4-stroke, In-Line Four, Liquid-Cooled, Fuel
+                Injected
+              </p>
+              <p>Displacement: 1043cc</p>
+              <p>Max Power: 118.27 HP @ 9000 rpm</p>
+              <p>Max Torque: 102.0 N.m (10.4 kgf.m) @ 7500 rpm</p>
+              <p>Transmission: 6-speed, return</p>
+              <p>Curb Mass: 253 kgs</p>
+              <p>Fuel Capacity: 21 Litres</p>
+              <p>Fuel System: Fuel Injection</p>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center">
+
+              <button><a href="reservation-step2.html" class="text-light">CHANGE</a></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------ check out section 1 end -->
+
+    <!------------------ check out section 2 start -->
+    <section id="section-extras">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 my-2">
+            <div class="extras-container">
+              <h4>Extras</h4>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id="extras1" value="Additional Driver"> Additional Driver</label>
+
+                <p>₱120/Per Rental</p>
+              </div>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id="extras2" value="GPS"> GPS</label>
+
+                <p>₱150/Per Rental</p>
+              </div>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id="extras3" value="Eletric-Tire-Pump"> Electric Tire Pump</label>
+
+                <p>₱120/Per Rental</p>
+              </div>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id="extras4" value="Music"> Music</label>
+
+                <p>₱120/Per Rental</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 col-md-12 my-2">
+            <div class="extras-container">
+              <h4>Protection</h4>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id=""> Collision Damage Waiver</label>
+
+                <p>₱120/Per Rental</p>
+              </div>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id=""> Theft Protection</label>
+
+                <p>₱120/Per Rental</p>
+              </div>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id=""> Rental Contract Fee</label>
+
+                <p>₱120/Per Rental</p>
+              </div>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id=""> Personal First Aid Service</label>
+
+                <p>₱120/Per Rental</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3 d-flex justify-content-center" id="to-step4">
+            <button class="text-light" onclick="window.location.href = 'reservation-step4.html'">Continue</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-bottom-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+
+      <!----------------------check out section 2 end------------------------>
+  </main>
+  <footer>
+    <section id="newsletter" class="py-4">
+      <div class="container">
+        <div class="row" id="newsletter-container">
+          <div class="col-lg-7 col-md-7 col-12 my-2">
+            <div id="nc-left">
+              <h4>Never miss a Deal!</h4>
+              <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
+            </div>
+          </div>
+
+          <div class="my-2 col-lg-5 col-md-5 col-sm-12 col-12 subscribe">
+            <div class="newsletter-ig">
+              <form class="input-group">
+                <input type="text" class="form-control" required />
+                <button id="subscribe">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5" id="footer">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
+            <img src="assets/img/ARK-white1.png" alt="" onclick="window.location.href = 'index.html'"
+              style="cursor: pointer;">
+            <div class="d-flex gap-2 justify-content-center mt-4">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-9 col-sm-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
+                <h4>Site map</h4>
+                <div class="d-flex flex-column">
+                  <a href="#">Bikes</a>
+                  <a href="#">About</a>
+                  <a href="#">Where to go</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
+                <h4>Support</h4>
+                <div class="d-flex flex-column">
+                  <a href="#">FAQ's</a>
+                  <a href="#">Help</a>
+                  <a href="#">Privacy Policy</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
+                <h4>Contact</h4>
+                <div class="d-flex flex-column">
+                  <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
+                  <p class="p-0">Phone: 0912-345-4567</p>
+                  <a href="#">Email: arkmotorental @gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid">
+      <div class="row text-center p-3 bg-dark">
+        <p class="text-light">&copy; Alrights Reserved</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!------------------ bootstrap js link ----------------------->
+  <script src="assets/mdbootstrap/js/mdb.min.js"></script>
+
+  <script src="assets/js/index.js"></script>
+
+
+  <script>
+
+
+    // getting the values from localstorage
+    const rentObject1 = JSON.parse(sessionStorage.getItem('rentObject1'));
+
+    const pickedLocation = rentObject1[0];
+    const pickedDate = rentObject1[1];
+    const pickedTime = rentObject1[2];
+    const returnLocation = rentObject1[3];
+    const returnDate = rentObject1[4];
+    const returnTime = rentObject1[5];
+    const motorImage = rentObject1[6];
+    const motorName = rentObject1[7];
+
+
+    //putting the extracted input to span 
+    document.getElementById('picked-date').innerText = pickedDate;
+    document.getElementById('picked-location').innerText = pickedLocation;
+    document.getElementById('picked-time').innerText = pickedTime;
+    document.getElementById('return-location').innerText = returnLocation;
+    document.getElementById('return-date').innerText = returnDate;
+    document.getElementById('return-time').innerText = returnTime;
+    document.getElementById('motor-selected').setAttribute('src', motorImage);
+    document.getElementById('motor-name').innerText = motorName;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

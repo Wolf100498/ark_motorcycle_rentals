@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARK - Signup</title>
+
+    <!------------------ bootstrap css link ----------------------->
+    <link rel="stylesheet" href="./assets/mdbootstrap/css/mdb.min.css" />
+
+    <!------------------ font awesome ----------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/signin.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 d-grid" style="place-items: center">
+          <div
+            id="container"
+            class="d-grid"
+            style="place-items: center; position: relative"
+          >
+            <div id="left-side-img-container">
+              <img src="assets/img/ARK-white1.png" alt="" />
+            </div>
+            <div class="sub-container">
+              <img src="assets/img/hero/Untitled design (1).png" alt="" />
+              <h5>The best deals, to rent motorcycles!.</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="right-side">
+          <div class="signin-container">
+            <h2>Welcome Back</h2>
+
+            <div class="input-container">
+              <div class="input-group">
+                <input type="text" placeholder="Email or Number" />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="input-group">
+                <input type="text" placeholder="Password" />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div id="remember-me">
+              <label for="">
+                <input type="checkbox" class="me-2" />Remember me</label
+              >
+            </div>
+
+            <button id="signin-button"><a href="index.html">Sign in</a></button>
+
+            <button id="google-signin">
+              <i class="fa-brands fa-google"></i> Sign Up with Google
+            </button>
+
+            <p id="dont-have-acc" class="text-dark">
+              Don't have an account? <a href="register.html">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ bootstrap js link ----------------------->
+    <script src="assets/mdbootstrap/js/mdb.min.js"></script>
+  </body>
+</html>
